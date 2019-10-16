@@ -1,0 +1,1046 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html {
+  scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+body{
+	font-family:"myriad-pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+body a:hover{
+	pointer:cursor;
+}
+
+/*Style Nav Bar and Contents*/
+.logo{
+	float:left;
+	padding-left:60px;
+	padding-top:5px;
+}
+.logo img{
+	width:200px;
+	height:auto;
+}
+.mobile{
+	display:none;
+	background-color:#CBFFFA;
+	height:auto;
+	padding:2%;
+}
+.fa-bars{
+	font-size:35px;
+	color:#004A5C;	
+}
+
+nav{
+	 background-color: transparent;
+	position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    height: 80px;
+    text-align: right;
+	
+}
+nav.solid {
+	z-index:1;
+  background-color: #065D69;
+  transition: background-color 0.5s ease 0s;
+  box-shadow: 0 0 4px black;
+	padding-bottom:5px;
+}
+nav ul{
+	margin:0;
+	padding-top:1.8%;
+	margin-right:6%;
+}
+nav li{
+	display: inline-block;
+	font-family: myriad-pro-condensed;
+	text-align:center;
+	padding-right:50px;
+	
+}
+nav a{
+	list-style: none;
+    text-decoration: none;
+    color: #CBFFFA;
+    font-size: 18px;
+}
+
+nav a:hover{
+	text-decoration:underline;
+	color:#25AAE1;
+}
+nav li:nth-of-type(6){
+	background-color:#CBFFFA;
+	margin-left:6%;
+	padding:3px 20px;
+	border-radius:5px;
+}
+#register_nav{
+	color:#696969;
+	font-weight:lighter;
+	letter-spacing:1px;
+}
+.navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
+
+/*Styles Header Image Container and Text*/
+
+.header_container{
+ background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("Images/Carysfort Entrance Night.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 900px;
+position:relative;
+	margin-top:-2%;
+}
+.header_text{
+	position:absolute;
+	top:23%;
+	left:20%;
+	font-family:myriad-pro-condensed;
+}
+.header_text h1{
+	letter-spacing:4px;
+	font-size:75px;
+	letter-spacing:4px;
+	color:#CBFFFA;
+}
+.header_text h2{
+	letter-spacing:6px;
+	margin-top:-9%;
+	font-size:65px;
+	color:white;
+	font-weight:400;
+}
+.header_text h4{
+	letter-spacing:3px;
+	font-size:35px;
+	color:white;
+	margin-top:-6%;
+	font-weight:100;
+	line-height:35px;
+}
+.header_text h5{
+	border-radius:10px;
+	border-width:3px;
+	border-style:solid;
+	border-color:#1AA89D;
+	width:20%;
+	text-align: center;
+	font-size:25px;
+	color:white;
+	margin-top:-3%;
+	font-weight:400;
+	line-height:35px;
+}
+.header_text a{
+	text-decoration:none;
+}
+.header_text h5:hover{
+	background-color:#1AA89D;
+}
+/*box under header style*/
+.under_header{
+	background-color:#1AA89D;
+	padding-top:20px;
+	padding-bottom:20px;
+	text-align:center;
+	width:100%;
+}
+.under_header h2{
+	color:#ffffff;
+	font-size:20px;
+	letter-spacing:1px;
+	font-weight:600;
+}
+.under_header p{
+	color:#ffffff;
+	font-weight:lighter;
+}
+#learn_button{
+	width:24%;
+	padding-top:0.5%;
+	margin:0 auto;
+	margin-top:-2%;
+	
+}
+#learn_button p{
+	border-radius: 20px;
+	padding:5px;
+	font-family: myriad-pro-condensed;
+	font-size:20px;
+	background-color:#25AAE1;
+	border:none;
+	text-align:center;
+	text-decoration:none;
+	color:#ffffff;
+	
+}
+/*video section and headers*/
+.video_section{
+	background-color:#ffffff;
+	padding-top:40px;
+	padding-bottom:40px;
+	text-align:center;
+	width:100%;
+}
+.video_section h1{
+	color:#1AA89D;
+	font-size:46px;
+	margin-bottom:-3%;
+}
+.video_section video{
+	width:40%;
+	margin-top:5%;
+	margin-bottom:5%;
+
+}
+/*Quote Dynamic Bar*/
+.quotes{
+	width:60%;
+	margin: 0 auto;
+	text-align:center;
+	
+}
+.quotes p{
+	color:#1AA89D;
+	font-family: myriad-pro-condensed;
+	font-weight:600;
+	font-size:25px;
+	padding-right:2%;
+	margin-top:-2%;
+}
+#quote2{
+	display:none;
+}
+#quote3{
+	display:none;
+}
+.fa-circle{
+	padding:0 1%;
+	color:#8DC7C2;
+}
+.fa-circle:hover{
+	cursor:pointer;
+	color:#004A5C;
+}
+.active_button{
+	color:#004A5C;
+}
+#name {
+	text-align:right;
+	font-weight:lighter;
+	font-size:18px;
+	color:#696969;
+}
+#quote_left{
+	width:20%;
+	margin-left:-110%;
+	margin-top:-4%;
+}
+#quote_right{
+	width:20%;
+	margin-right:-114%;
+	margin-top:-1%;
+}
+/*Schedule container & area*/
+.schedule_box{
+	background-image: linear-gradient(rgba(14,86,60,0.80), rgba(14,86,60,0.80)), url("Images/2019 Signature Shot.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position:top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+	padding:40px;
+	padding-bottom:6%;
+}
+.schedule_box h1{
+	color:#ffffff;
+	text-align:center;
+	letter-spacing: 1px;
+}
+.schedule_box p{
+	margin:0 auto;
+	text-align:center;
+	line-height:30px;
+	color:#ffffff;
+	letter-spacing:1px;
+}
+.text_container_schedule{
+	width:70%;
+	text-align:center;
+	margin: 0 auto;
+}
+.table_container{
+	height:auto;
+}
+.days{
+	width:60%;
+	margin: 5% auto 3% auto;
+	text-align:center;
+	border-collapse: collapse;
+
+}
+.days caption{
+padding-bottom:2%;
+	letter-spacing:7px;
+	text-align:center;
+	color:white;
+	font-size:40px;
+	font-family: myriad-pro-condensed;
+	font-weight:bold
+}
+.days  th{
+	font-family: myriad-pro-condensed;
+	font-weight:200;
+	font-size:20px;
+	color:white;
+	padding-bottom:4%;
+}
+.days td {
+	font-family: myriad-pro-condensed;
+	line-height:50px;
+	color:white;
+	letter-spacing:2px;
+	font-size:22px;
+	width:50%;
+}
+.day_buttons_container{
+	width:100%;
+	display:inline-flex;
+	flex-wrap:wrap;
+	padding-top:1%;
+	
+}
+.day_button{
+	text-align:center;
+	font-size:20px;
+	padding:0.5% 3%;
+	margin:0 auto;
+	border-color:#1AA89D;
+	border-radius:5px;
+	border-style:solid;
+	border-width:4px;
+}
+.day_button_active{
+	cursor:pointer;
+	text-align:center;
+	font-size:20px;
+	padding:0.5% 3%;
+	margin:0 auto;
+	background-color:#1AA89D;
+	border-color:#1AA89D;
+	border-radius:5px;
+	border-style:solid;
+	border-width:4px;
+}
+.day_button:hover{
+	cursor:pointer;
+	text-align:center;
+	font-size:20px;
+	padding:0.5% 3%;
+	margin:0 auto;
+	background-color:#1AA89D;
+	border-color:#1AA89D;
+	border-radius:5px;
+	border-style:solid;
+	border-width:4px;
+}
+.day_button p{
+text-align:center;
+		width:100%;
+}
+#mon{
+	display:none;
+}
+#tues{
+	display:none;
+}
+/*Bring Your Board Section*/
+.bring_board {
+	width:100%;
+	margin: 0 auto;
+	display: inline-flex;
+	flex-direction: row;
+}
+.bring_board_text{
+	padding:2%;
+	background-color:#13A89E;
+
+}
+.bring_board_text h1{
+	color:#ffffff;
+	margin-bottom:-1%;
+	width:50%;
+	line-height:60px;
+	font-size:60px;
+}
+.bring_board_text p{
+	color:#ffffff;
+	letter-spacing:1px;
+	line-height:18px;
+}
+.board_events{
+	
+background-image: linear-gradient(rgba(14,86,60,0.80), rgba(14,86,60,0.80)), url("Images/meeting-room-10270_1920.jpg");
+background-size:cover;
+	background-position: center bottom;
+	background-repeat:no-repeat;
+	width:60%;
+	padding-top:3%;
+	text-align:center;
+}
+.board_events h2 {
+	
+	color: white;
+	Letter-spacing: 3px;
+	font-size:30px;
+}
+.board_events p{
+	color: white;
+	font-size:18px;
+}
+/*Speaker Section Style and Boxes*/
+.confirmed_speakers{
+	background-color:#ffffff;
+	padding:40px;
+}
+.confirmed_speakers h1{
+	color:#13A89E;
+	text-align:center;
+	letter-spacing: 1px;
+}
+.speaker_group{
+	margin:0 auto;
+	
+
+}
+.speaker_group ul{
+	display:flex;
+	margin:0 auto;
+	flex-wrap:wrap;
+	width:90%;
+	padding:0% 2%;
+}
+.speaker_group li{
+	width:100%;
+	padding:0% 3%;
+	list-style:none;
+	margin:2% auto;
+	text-align:center;
+	flex-basis:15%;
+	
+}
+.speaker_group li h3{
+	color:#13A89E;
+	font-weight:800;
+	margin:2%
+}
+.speaker_group li p{
+	color:#696969;
+	line-height:30px;
+	margin:2%;
+	font-weight:100;
+	font-size:16px;
+	font-family:myriad-pro;
+
+}
+.headshot{
+	border-radius:100px;
+	margin:0 auto;
+	width:160px;
+	height:170px;
+	object-fit: cover;
+	object-position: top
+	
+	
+}
+
+.view_bio p{
+	color:#13A89E !important;
+	font-family:"myriad-pro-condensed", "serif" !important;
+	font-size:20px !important;
+	letter-spacing: 4px;
+	font-weight:500 !important;
+}
+.view_bio p:hover{
+	cursor:pointer;
+	font-weight:800 !important;
+}
+.fa-twitter{
+	color:#25AAE1;
+	font-size:30px;
+}
+.fa-twitter:hover{
+	cursor:pointer;
+}
+/*Styles Speaker Pop Up Pages*/
+.speaker_bio_show{
+	z-index:1001;
+	padding-top:2%;	
+	margin-bottom:2%;
+	position: fixed;
+    width: 70%;
+	overflow: scroll;
+	height:auto;
+    display: none;
+    background-color: #ffffff;
+    text-align: center;
+    top: 9%;
+    left:15%;
+	 -webkit-filter: drop-shadow(0px 2px 2px #222);
+            filter: drop-shadow(0px 2px 2px #222);
+}
+.popup_bio_text{
+	padding:0% 4% 4% 4%;
+	
+}
+.popup_bio_text p{
+	color:#696969;
+	line-height:25px;
+	font-weight:100;
+	font-size:16px;
+	font-family:myriad-pro;
+}
+.popup_bio_text h3{
+	color:#13A89E;
+	text-align:center;
+	margin-bottom:-1%;
+	font-weight:800;
+	text-decoration:underline;
+}
+.blur {
+	z-index:1000;
+ 	position:absolute;
+ 	background-color: rgba(0, 0, 0, 0.7);
+	display:none;
+	margin:0;
+    /* stretch to screen edges */
+    top: 0%;
+	left: 0%;
+    bottom: -700%;
+    right: 0%;
+}
+.governace_symposium{
+	background-color:#13A89E;
+	margin:0 auto;
+	padding:1%;
+	color:#ffffff;
+	width:100%;
+	height:auto;
+	display:flex;
+	flex-flow:row wrap;
+ }
+
+.gs_text{
+	margin-left:2%;
+	width:300px;
+	flex-flow:row wrap;
+}
+.gs_text h1{
+	font-size:40px;
+	line-height:42px;
+	margin-bottom:-1%;
+}
+.gs_photos{
+	padding-top:2%;
+	width:60%;
+	height:auto;
+	text-align:right;
+	margin:0 auto;
+	
+}
+.gov_img{
+	padding:1%;
+	display:inline-block;
+}
+.gov_img img{
+	height:200px;
+	width:250px;
+}
+.awards_con{
+	background-image:url("Images/JSC09183.jpg");
+	background-position: center;
+	background-repeat:none;
+	background-size:cover;
+	padding:3%;
+}
+.awards_text{
+	padding:4%;
+	line-height:30px;
+	color:#ffffff;
+	font-weight:lighter;
+	background-color:rgba(26,168,157,.58);
+}
+.awards_text h1{
+	text-align:center;
+	line-height:30px;
+}
+.lodging{
+	padding:4% 0%;
+}
+.lodging h1{
+	text-align:center;
+	font-size:50px;
+	color:#1AA89D;
+}
+.lodging p{
+	color:#696969;
+	padding:0 2%;
+	font-weight:400;
+}
+
+.lodging_photos {
+	width:100%;
+	text-align: center;
+	
+}
+.lodging_photos img{
+	height:300px;
+	object-fit:contain;
+	padding:2%;
+	
+}
+.book_now{
+	width:75%;
+	margin:0 auto;
+	background-image: url("Images/Florida Keys.png");
+	background-repeat:no-repeat;
+	background-size:contain;
+}
+.book_now h2{
+	text-align: left;
+	color:#1AA89D;
+	font-size:30px;
+}
+#book_now_button{
+	background-color:#25AAE1;
+	width:30%;
+	margin:0 auto;
+	border-radius: 20px;
+}
+#book_now_button p{
+	padding:5px;
+	font-family: myriad-pro-condensed;
+	font-size:20px;
+	border:none;
+	text-align:center;
+	text-decoration:none;
+	color:#ffffff;
+}
+
+/*Sponsor Container Section*/
+.sponsor_slide_show{
+	margin: 0;
+	text-align:center;
+    background-color: rgba(26, 168, 157, 0.18);
+    margin-bottom: 5%;
+}
+
+.sponsor_slide_show ul{
+	text-align:center;
+	display: inline-flex;
+    flex-wrap: wrap;
+    list-style: none;
+    width: 90%;
+    padding-bottom: 5%;
+    margin: 0 auto;
+	
+}
+.sponsor_slide_show li{
+	padding:4% 4%;
+	margin: 0 auto;
+	display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-justify-content: center;
+	 -webkit-filter: grayscale(100%); 
+    	filter: grayscale(100%);
+	opacity:0.75
+}
+
+.sponsor_slide_show li:hover{
+ 	opacity: 1;
+	cursor:pointer;
+	 -webkit-filter: grayscale(0%);
+       -moz-filter: grayscale(0%);
+         -o-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+            filter: grayscale(0%);
+	transition: filter .3s ease-in-out, -webkit-filter .3s ease-in-out;
+
+}
+
+.sponsor_slide_show h1{
+	text-align:center;
+	font-size:70px;
+	color:#ffffff;
+	 -webkit-filter: drop-shadow(0px 2px 2px #222);
+            filter: drop-shadow(0px 2px 2px #222);
+}
+
+
+/*Footer*/
+footer{
+	padding: 0 1% 2% 1%;
+	margin: 0 auto;
+	display:flex;
+
+}
+#footer_logo img{
+	width:200px;
+	float:center;
+}
+#footer_middle{
+	padding-left:10%;
+	margin: 0 auto;
+	width:60%;
+	line-height:25px;
+	font-size:14px;
+	text-align:center;
+	color:#696969;
+}
+#footer_register{
+	background-color:#1AA89D;
+	width:30%;
+	margin:0 auto;
+	
+}
+#footer_register p{
+	color:#ffffff;
+	font-size:20px;
+	font-weight:bold;
+	padding:5px;
+	
+}
+
+#add_links{
+	width:20%;
+}
+#add_links ul{
+	list-style: none;
+}
+#add_links li{
+	text-align:right;
+	font-size:12px;
+	color:#696969;
+	line-height:25px;
+}
+
+@media (max-width: 1200px){
+	#add_links li{
+		font-size:12px;
+	}
+	.blur{bottom:-800%;}
+	#add_links{
+		width:30%;
+	}
+	
+	#footer_middle p{
+		font-size:14px;
+	}
+	#footer_logo img{
+		width:200px;
+	}
+}
+
+@media (max-width: 1000px){
+	body, html{
+		overflow-x: hidden;
+	}
+	.blur{bottom:-1000%;}
+	.mobile{
+		overflow:hidden;
+		width:100%;
+		z-index:2000;
+		display:inline-flex;
+		position:fixed;
+		top:0%;
+	}
+	.logo {
+		padding-top:4%;
+		float:none;
+		text-align:center;
+	}
+	nav {
+		display:none;
+		z-index:999;
+		width:100%;
+		height:auto;
+		position:fixed;
+		top:8%;
+		opacity:1.0;
+	}
+	nav ul {
+		padding-bottom:5%;
+	}
+	nav ul li{
+		display: block; 
+		padding: 2%;
+		margin: 0 auto;
+	}
+	nav ul li:nth-of-type(6){
+	width:50%;
+		margin: 0 auto;
+}
+	.speaker_bio_show{
+		top:2%;
+
+}
+}
+
+
+@media (max-width: 900px){
+	.quotes{
+		width:76%;
+	}
+	.quote_text p{
+		font-size:20px;
+		font-weight:500;
+		line-height:30px;
+	}
+	#learn_button{
+		width:50%;
+	}
+	#home_button{
+		width:50%;
+	}
+	.video_section video{
+		width:70%;
+	}
+	.lodging_photos img{
+		width:90%;
+		object-fit:cover;
+	}
+	.lodging p{
+		line-height:30px;
+	}
+	.governace_symposium{
+		width:auto;
+	}
+	.gs_text{
+		width:90%;
+	}
+	.gs_photos{
+		width:80%;
+	}
+	.gs_photos img{
+		display:block;
+		width:90%;
+		height:250px;
+		object-fit: cover;
+	}
+	#book_now_button{
+		width:60%;
+	}
+	.text_container_schedule{
+		width:100%;
+		font-size:14px;
+	}
+	.days{
+		padding-top:2%;
+		width:100%;
+	}
+	.days caption{
+		font-size:30px;
+
+	}
+	.days td{
+		line-height:28px;
+		font-size:16px;
+	}
+	.bring_board{
+		flex-wrap:wrap;
+	}
+	.board_events{
+		width:100%;
+	}
+}
+
+@media (max-width: 700px){
+	.header_text{
+		background-size:750px;
+		
+	}
+	.blur{bottom:-1200%}
+	.header_container{
+		height:700px;
+	}
+	.header_text h1{
+		font-size:50px;
+		line-height:50px;
+		padding-bottom:4%;
+	}
+	.header_text h2{
+		font-size:50px;
+		line-height:50px;
+	}
+	#home_button{
+		width:58%;
+	}
+	#home_button p{
+		font-size:18px;
+	}
+.day_buttons_container p{
+		font-size:15px;
+}
+
+	.day_button{
+		
+		width:100%;
+	}
+	#book_now_button p{
+		font-size:18px;
+	}
+	#footer_logo img{
+		display:none;
+	}
+	.lodging h1{
+		font-size:40px;
+	}
+	.speaker_bio_show{
+		width:90%;
+		left:5%;
+		
+	}
+	.bring_board_text h1{
+		font-size:40px;
+		width:100%;
+		line-height:38px;
+	}
+}
+
+
+@media (max-width: 599px){
+	#quote_left{
+		padding-top:10%;
+	}
+
+	.video_section video{
+		width:90%;
+	}
+	.under_header h2{
+		font-size:16px;
+	}
+	.under_header p{
+		font-size:14px;
+	}
+	#learn_button{
+		width:80%;
+	}
+	#book_now_button{
+		width:80%;
+	}
+	#footer_register{
+		width:50%;
+	}
+	.lodging h1{
+		font-size:30px;
+	}
+	.lodging p{
+		line-height:35px;
+	}
+	.awards_text h1{
+		font-size:25px;
+	}
+	.awards_text p{
+		font-size:16px;
+	}
+	.speaker_bio_show{
+		bottom:0%;
+	}
+
+	.popup_bio_text p{
+		line-height:30px;
+		text-align:left;
+		
+	}
+
+	.under_header h2{
+		display:none
+	}
+	.under_header p{
+		font-size:15px;
+		font-weight:500;
+	}
+	.lodging_photos img{
+		width:100%;
+		margin:0 auto;
+		padding:5px 0;
+	}
+	.book_now {
+		width:100%;
+		padding-left:4px;
+	}
+	.book_now p{
+		line-height:25px;
+	}
+	.lodging p{
+		line-height:25px;
+	}
+
+
+	#quote_left{
+		z-index:-1000;
+		width:60%;
+		opacity:0.20;
+		margin-bottom:-40%;
+		padding-left:300px;
+	}
+	#quote_right{
+		z-index:-1000;
+		width:50%;
+		opacity:0.20;
+		margin-top:-20%;
+		padding-right:200px;
+	}
+	.quotes{
+		width:100%;
+	}
+}
+
+@media (max-width: 400px){
+	.video_section h1{
+		font-size:35px;
+		width:100%;
+	}
+	.header_text{
+		background-image:none;	
+	}
+	.header_text h1{
+		-webkit-filter: drop-shadow(0px 2px 2px #222);
+    filter: drop-shadow(0px 2px 2px #224);
+	}
+	#home_button{
+		width:90%;
+	}
+	
+	.blur{bottom:-1500%}
+	
+	.lodging_photos img{
+		
+		height:200px;
+		object-fit:cover;
+	}
+	#book_now_button{
+		width:100%;
+	}
+	
+	}
+
+
+
+
